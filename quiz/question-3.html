@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <header>
+    <img src="https://ux.pearson.com/web-components/img/white-full-logo.png" />
+    <div class="user-nav">
+      <div class="user-avatar">
+        <p class="user-init">EH</p>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div id="main-element">
+      <div class="quiz-welcome">
+        <p id="question-num">Question 3/4</p>
+      </div>
+      <div class="quiz-element">
+        <div class="quiz-content">
+          <p id="question-content">What is your favorite language?</p>
+          <p id="question-subtext">
+            Please choose the option that is most accurate
+          </p>
+        </div>
+        <div id="quiz-answers">
+          <input
+            class="response"
+            type="radio"
+            id="response1"
+            name="response"
+            value="python"
+          />
+          <label for="response1"> Python</label><br />
+          <input
+            class="response"
+            type="radio"
+            id="response2"
+            name="response"
+            value="java"
+          />
+          <label for="response2"> Java</label><br />
+          <input
+            class="response"
+            type="radio"
+            id="response3"
+            name="response"
+            value="javascript"
+            correct="true"
+          />
+          <label for="response3"> JavaScript</label><br />
+          <input
+            class="response"
+            type="radio"
+            id="response4"
+            name="response"
+            value="english"
+          />
+          <label for="response4"> English</label><br />
+        </div>
+        <div id="quiz-footer" class="quiz-footer">
+          <p>Please click the button below to submit your answer</p>
+        </div>
+        <div id="btn-container" class="btn-container">
+          <button id="submit-btn" class="primary-btn">SUBMIT</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p>
+      Terms of Use | Privacy Policy | Copyright © 1996-2021 Pearson Education
+      Inc. All Rights Reserved.
+    </p>
+  </footer>
+  <script src="quiz.js" type="module"></script>
+</html>
